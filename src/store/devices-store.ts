@@ -13,7 +13,6 @@ export function isDeviceBounded(name: string): boolean {
 
 export function isDeviceAvailable(name: string): boolean {
   const availableDevices: GetRegisteredDevicesResponse[] = availableDeviceNames;
-  return true
   return availableDevices.filter(device => device.deviceName === name).length > 0;
 }
 
